@@ -41,7 +41,11 @@ function Meme() {
         const url = allMemes[randomNumber].url;
         console.log(url);
         setMeme(prevMeme => ({
-            ...prevMeme, 
+            ...prevMeme,
+            topText :"",
+            bottomText :"",
+            thirdText:"",
+            fourthText:"", 
             randomImage: url
         }));
     }
